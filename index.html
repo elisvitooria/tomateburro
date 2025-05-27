@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doçuras do Céu - Sobremesas Divinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Doçuras do Céu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#receitas">Receitas</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Seu cantinho de doçuras e inspirações!</h2>
+                <p>Descubra as mais deliciosas e encantadoras receitas de sobremesas para adoçar seu dia.</p>
+                <a href="#receitas" class="btn">Explorar Receitas</a>
+            </div>
+        </section>
+
+        <section id="receitas" class="recipes-section">
+            <div class="container">
+                <h3>Nossas Delícias</h3>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="https://images.unsplash.com/photo-1551025732-c64cc5c50c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwxfHxjdXBlY2FrZXN8ZW58MHx8fHwxNzE2NzUxMTk4fDA&ixlib=rb-4.0.3&q=80&w=400" alt="Cupcakes Fofinhos">
+                        <h4>Cupcakes Fofinhos de Baunilha</h4>
+                        <p>Pequenos bolinhos que derretem na boca, com cobertura de glacê cremoso.</p>
+                        <a href="#" class="btn-small">Ver Receita</a>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://images.unsplash.com/photo-1549405232-a567675f9288?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHxjYWtllvbnwwfHwxfHwxNzE2NzUxMTk4fDA&ixlib=rb-4.0.3&q=80&w=400" alt="Bolo de Morango">
+                        <h4>Bolo de Morango com Nuvens de Chantilly</h4>
+                        <p>Um bolo leve e refrescante, perfeito para qualquer ocasião especial.</p>
+                        <a href="#" class="btn-small">Ver Receita</a>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://images.unsplash.com/photo-1588195568160-c3d350b55577?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwzfHxjYWtllvbnwwfHwxfHwxNzE2NzUxMTk4fDA&ixlib=rb-4.0.3&q=80&w=400" alt="Macarons Coloridos">
+                        <h4>Macarons Coloridos e Crocantes</h4>
+                        <p>Pequenos biscoitos franceses com recheios variados e cores vibrantes.</p>
+                        <a href="#" class="btn-small">Ver Receita</a>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="https://images.unsplash.com/photo-1563721791850-706ca9b844f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw0fHxjYWtllvbnwwfHwxfHwxNzE2NzUxMTk4fDA&ixlib=rb-4.0.3&q=80&w=400" alt="Torta de Limão">
+                        <h4>Torta de Limão Suspiro</h4>
+                        <p>A combinação perfeita de acidez e doçura em uma torta irresistível.</p>
+                        <a href="#" class="btn-small">Ver Receita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h3>Sobre Nós</h3>
+                <p>O "Doçuras do Céu" nasceu do amor por sobremesas que não apenas satisfazem o paladar, mas também aquecem o coração. Acreditamos que cada doce é uma pequena obra de arte, e queremos compartilhar essa paixão com você. Aqui, você encontrará receitas testadas e aprovadas, dicas de decoração e muita inspiração para suas criações culinárias.</p>
+                <p>Nossa missão é tornar a arte de fazer sobremesas acessível e divertida para todos, desde iniciantes até confeiteiros experientes. Prepare-se para um mundo de sabores e cores!</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h3>Fale Conosco</h3>
+                <p>Tem alguma dúvida, sugestão ou quer compartilhar sua receita favorita? Adoraríamos ouvir de você!</p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Doçuras do Céu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
